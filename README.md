@@ -107,6 +107,8 @@ Example playbook:
     - hosts: localhost
       roles:
         - dev-sec.ssh-hardening
+      vars:
+        ssh_permit_root_login: "yes"
 
 ## Local Testing
 
